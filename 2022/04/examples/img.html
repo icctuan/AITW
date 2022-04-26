@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="./img/video.png" class="transImg" />
+    </div>
+    <p>图片</p>
+  </body>
+</html>
+<style>
+  P {
+    margin: 0;
+  }
+
+  /** 图片高宽自适应并居中 */
+  /* .wrapper {
+    position: relative;
+    width: 74px;
+    height: 74px;
+  }
+  .transImg {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  /** 图片宽度先自适应后再裁切, 高度同理 */
+  .wrapper {
+    position: relative;
+    width: 74px;
+    height: 74px;
+    overflow: hidden;
+  }
+  .transImg {
+    max-width: 100%;
+    /* max-height: 100%; */
+    object-fit: cover;
+  }
+</style>
