@@ -6,6 +6,8 @@
 
 ### 3.TS - interface 和 type 的区别
 
+interface 可以继承，使用场景：组件 props 继承
+
 ### 4.Grid 布局
 
 ### 5.图片自适应布局
@@ -33,7 +35,7 @@
 #### _background_
 
 bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-
+2
 ```
 background-color: 指定要使用的背景颜色
 
@@ -60,3 +62,4 @@ background-attachment:	设置背景图像是否固定或者随着页面的其余
 
 background-image:	指定要使用的一个或多个背景图像
 ```
+### 6.webpack集成了babel会进行编译，可以用const定义一个函数，并在这之前调用它。vite不编译不可以，所以vite不能用于生产环境，在热刷新上体验更好。
